@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+
+<form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+
+	<label for="username">username</label>
+	<!--adding ngModel automatically adds touch class, pristine & valid class -->
+	<!-- template reference = #. #x on a input can be used to refer to the input-->
+	<!-- we can make a template reference. if we set the value 'ngModel' to #username, then we can access its other properties too-->
+	<!--Now on the component, we have usernameData which has the string, and username which has the ngModel data-->
+	<input type="text" id="username" name="username" [(ngModel)]="usernameData" #username="ngModel" required>
+	<span [hidden]="username.valid || username.pristine">Name is required</span>
+	<!--{{username.className}}-->
+
+	<br>
+	<label for="password">password</label>
+	<input type="password" id="password" name="password" [(ngModel)]="passwordData" #password="ngModel" required>
+	<span [hidden]="password.valid || password.pristine">Password required</span>
+
+	<br>
+	<button type="submit">Submit</button>
+</form>

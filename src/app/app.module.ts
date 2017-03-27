@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { BaseFormComponent } from './base-form/base-form.component';
+import { FormValidationComponent } from './form-validation/form-validation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BaseFormComponent
+    BaseFormComponent,
+    FormValidationComponent
   ],
   imports: [
     BrowserModule,
