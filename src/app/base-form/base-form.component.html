@@ -1,0 +1,13 @@
+<form (ngSubmit)="onSubmit()">
+	<!--label's for connects to input's id.-->
+	<!--input's name is used for form data submission-->
+	<!--button submit with (onSubmit) automatically makes GET request to current url with input data as query-->
+	<!--if onSubmit is implemented, we can control the bahaviour-->
+	<label for="username">username</label>
+	<input type="text" id="username" name="username">
+
+	<label for="password">password</label>
+	<input type="password" id="password" name="password">
+
+	<button type="submit">Submit</button>
+</form>
