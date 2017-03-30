@@ -1,0 +1,14 @@
+<p>
+	Model based form with Reactive forms module:
+</p>
+<!--formGroup directive applied on form. its data comes from ctrl's form-->
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+	<!--'required' is not needed. validation happens in ctrl-->
+	<label>username</label>
+	<input type="text" formControlName="username">
+
+	<label>password</label>
+	<input type="password" formControlName="password">
+
+	<button type="submit" [disabled]="!form.valid">Submit</button>
+</form>
