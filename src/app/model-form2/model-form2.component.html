@@ -1,0 +1,24 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value, form.valid)">
+	<label>Username</label>
+	<input formControlName="username">
+
+	<label>password</label>
+	<input formControlName="password">
+	<!--we can access form state through form.-->
+	<small [hidden]="form.controls.password.valid || (form.controls.password.pristine && !submitted)">Required. Min 6 char.</small>
+
+	<span formGroupName="address">
+		<label>street</label>
+		<input formControlName="street">
+		<small [hidden]="form.controls.address.controls.street.valid || (form.controls.address.controls.street.pristine && !submitted)">Street is required</small>
+		<label>postcode</label>
+		<input formControlName="postcode">
+	</span>
+
+	<button type="submit">Submit</button>
+</form>
+
+Form Changes:
+<div *ngFor="let event of events">
+	<pre>{{event | json}}</pre>
+</div>

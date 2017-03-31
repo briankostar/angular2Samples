@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { BaseFormComponent } from './base-form/base-form.component';
 import { FormValidationComponent } from './form-validation/form-validation.component';
 import { ModelFormComponent } from './model-form/model-form.component';
+import { ModelForm2Component } from './model-form2/model-form2.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BaseFormComponent,
     FormValidationComponent,
-    ModelFormComponent
+    ModelFormComponent,
+    ModelForm2Component
   ],
   imports: [
     BrowserModule,
