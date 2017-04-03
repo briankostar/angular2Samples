@@ -3,8 +3,8 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
 
 @Component( {
 	selector   :'app-model-form',
-	templateUrl:'./model-form.component.html',
-	styleUrls  :[ './model-form.component.css' ]
+	templateUrl:'model-form.component.html',
+	styleUrls  :[ 'model-form.component.css' ]
 } )
 export class ModelFormComponent implements OnInit {
 	form:FormGroup;

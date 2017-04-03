@@ -5,8 +5,8 @@ import { User } from './user.interfece';
 
 @Component( {
 	selector   :'app-model-form2',
-	templateUrl:'./model-form2.component.html',
-	styleUrls  :[ './model-form2.component.css' ]
+	templateUrl:'model-form2.component.html',
+	styleUrls  :[ 'model-form2.component.css' ]
 } )
 export class ModelForm2Component implements OnInit {
 	//form is type of formgroup
